@@ -6,6 +6,10 @@ class Api::V1::TripsController < ApplicationController
     render json: @trips
   end
 
+  def show
+    @trip = Trip.find(params[:id])
+  end
+
   def new
     @trip = Trip.new
   end
@@ -43,6 +47,6 @@ class Api::V1::TripsController < ApplicationController
   end
 
     def trip_params
-        params.require(:trip).permit(:location, :done)
+        params.require(:trip).permit(:location, :completed)
       end
 end

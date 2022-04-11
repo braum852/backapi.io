@@ -6,5 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Trip.create(location: 'Museum', done: true)
-Trip.create(location: 'Brisbane', done: false)
+Trip.create(location: 'Museum', completed: true)
+Trip.create(location: 'Brisbane', completed: false)
+Trip.create(location: 'Sydney')

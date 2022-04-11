@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2022_04_11_093246) do
 
   create_table "trips", force: :cascade do |t|
     t.string "location"
-    t.boolean "done"
+    t.boolean "completed", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

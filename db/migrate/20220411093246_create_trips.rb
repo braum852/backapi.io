@@ -2,7 +2,7 @@ class CreateTrips < ActiveRecord::Migration[6.1]
   def change
     create_table :trips do |t|
       t.string :location
-      t.boolean :done
+      t.boolean :completed, default: false
 
       t.timestamps
     end
